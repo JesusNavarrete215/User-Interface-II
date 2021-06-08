@@ -44,7 +44,7 @@ table {
     max-width:100%; /*Makes it so that elements can never be bigger than their parents, stops the horizontal scroll bar*/
     padding:0;
     margin:0;
-    border: 1px solid grey;
+   
 }
 
 /*General Styles*/
@@ -175,22 +175,55 @@ h1{
     display: flex;
     flex-direction: row;
     align-items: center;
-
-}
-button{
-    margin-left: 40%;
 }
 
 .top div{
-    width: 50%;
-    height: 50%; 
-    padding: 2%;
+    display: flex;
+  justify-content: center;
+  flex-direction: column;
+  width: 50%;
+  margin: 5%;
+}
+.top button{
+    width: 15%;
+    margin-left: 40%;
+    border: .25rem solid black;
 }
 
-.contact{
+#contact{
     display: flex;
     justify-content: center;
 }
-    
 
+#contact{
+    background-color:rgb(219, 219, 219);
+    display: flex;
+    justify-content: 
+}
+
+#contact button{
+    margin-left: 25%;
+    margin-top: 5%;
+    margin-bottom: 5%;
+    border: .25rem solid black;
+    
+}
+
+/* CSS stuff responsive design
+360x640
+1366x768
+1920x1080
+
+*/ 
+@media (min-width: 360px), (min-height: 640px) {
+    
+    .links{
+        width: 80%;
+    }
+    #home button{
+        width: 70%;
+        margin-left: 10%;
+    }
+
+}
 
